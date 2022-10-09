@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Header from './components/Header';
+import AddName from './components/Name';
+import Profile from './components/Profile';
+import UserContext from './context/UserContext';
+
 
 function App() {
+
+  const [user, setUser] = useState(null);
+  const userData = {
+    user: [user, setUser]
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App-header'>
+      <UserContext.Provider value={userData}>
+        <Header />
+        <Profile />
+      </UserContext.Provider>
     </div>
   );
 }
