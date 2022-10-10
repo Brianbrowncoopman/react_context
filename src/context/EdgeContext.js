@@ -1,10 +1,9 @@
 import { createContext } from 'react';
 
-const UserContext = createContext({
+const EdgeContext = createContext({
   user: ["", ()=> {}],
   
-  
-  
+
 });
 
-export default UserContext;
+export default EdgeContext;

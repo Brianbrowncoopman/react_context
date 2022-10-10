@@ -5,16 +5,6 @@
   height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #3965bd;
@@ -27,29 +17,19 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.form {
+.forms {
   display: flex;
-  flex-direction: row;
-  gap:20px;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
 }
 
 .first {
- 
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 200px;
   background-color: gray;
-  color: rgb(219, 216, 28);
+  color: rgb(27, 27, 23);
   border-radius: 20px;
   border: 5px solid rgb(92, 92, 92);
   padding-left: 10px;
@@ -58,27 +38,35 @@
 }
 
 .second {
-  
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 200px;
+  margin-left: 12px;
   background-color: gray;
-  color: rgb(219, 216, 28);
+  color: rgb(15, 15, 15);
   border-radius: 20px;
   border: 5px solid rgb(92, 92, 92);
   padding-left: 10px;
   padding-right: 10px;
+  
 }
 
 .input{
   width: 200px;
   height: 40px;
-  border-radius: 5px;
-  font-size: 30px;
+  border-radius: 15px;
+  font-size: 20px;
+  justify-content: center;
+  
 
 }
 
 .btn{
+  width: 150px;
+  height:40px ;
   border-radius: 15px;
-  background-color: rgb(235, 66, 198);
-  color: blue;
-  font-size: 30px;
+  background-color: rgb(67, 41, 184);
+  color: rgb(2, 2, 78);
+  font-size: 20px;
   padding: 5px;
 }
