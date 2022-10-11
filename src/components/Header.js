@@ -6,9 +6,9 @@ import UserContext from '../context/UserContext';
 
 export default function Header() {
 
-  const context = useContext(UserContext)
-  const contextt = useContext(CityContext)
-  const contexttt = useContext(EdgeContext)
+  const context = useContext(UserContext);
+  const contextt = useContext(CityContext);
+  const contexttt = useContext(EdgeContext);
 
   return (
     <div className='first'>

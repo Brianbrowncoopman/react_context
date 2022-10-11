@@ -24,6 +24,7 @@ export default function Profile() {
         <p>Hola: {name} aqui esta tu perfil</p>
         <p>de la ciudad de: {town}</p>
         <p>{edge} años de edad</p>
+        <p>{name} tienes: {edge} y vives en {town}</p>
       </div>
 {/*buen dia no pude pasar el texto del input al hacer click en el boton,
 se pasa con el onChange del input automaticamente */}
@@ -37,13 +38,13 @@ se pasa con el onChange del input automaticamente */}
           <input 
             className='input'
             autoComplete="off"
-            placeholder='nombre aqui'
+            placeholder=' Nombre aqui'
             type="text"
             name="user"
             value={name}
             onChange={e => setName(e.target.value)}
           />
-          <button className='btn' type="submit" onClick={() => setName("")}>Nombre</button>
+          <button className='btn' type="submit" onClick={() => setName("user")}>Nombre</button>
         </form>
         <br />
 {/*boton que deberia cambia ciudad*/}
@@ -56,7 +57,7 @@ se pasa con el onChange del input automaticamente */}
           <input 
             className='input'
             autoComplete="off"
-            placeholder='ciudad aqui'
+            placeholder=' Ciudad aqui'
             type="text"
             name="city"
             value={town}
@@ -75,13 +76,13 @@ se pasa con el onChange del input automaticamente */}
           <input 
             className='input'
             autoComplete="off"
-            placeholder='edad aqui'
+            placeholder=' Edad aqui'
             type="text"
             name="edad"
             value={years}
             onChange={e => setYears(e.target.value)}
           />
-          <button className='btn' type="submit" onClick={() => setYears("")}>edad</button>
+          <button className='btn' type="submit" onClick={() => setYears("")}>Edad</button>
         </form>
       </div> 
     </div>

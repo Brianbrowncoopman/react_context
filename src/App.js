@@ -25,14 +25,14 @@ function App() {
     edge: [edge, setEdge]
   }
 
-const data = { user, city }
+{/*const data = { user, city }*/}
 
 
   return (
     <div className='App-header'>
       <UserContext.Provider value={userData}>
-        <CityContext.Provider value= {cityData}>
-          <EdgeContext.Provider value= {edgeData}>
+        <CityContext.Provider value={cityData}>
+          <EdgeContext.Provider value={edgeData}>
             <Header />
             <Profile />
           </EdgeContext.Provider>
